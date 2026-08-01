@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 300,
+      "includeFiles": "{app/**,config/**,lib/**,prisma/**,storage/uploads/**,node_modules/.prisma/client/**,node_modules/@prisma/client/**}"
+    }
+  }
+}
